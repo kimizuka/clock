@@ -1,0 +1,688 @@
+#clock:before {
+  position: absolute;
+  display: block;
+  left: 50%;
+  content: "";
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.1)), to(transparent));
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  opacity: 0;
+}
+
+[data-visible="true"]#clock:before {
+  opacity: 1;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  margin: 0; padding: 0;
+}
+
+html {
+  height: 100%;
+  cursor: pointer;
+}
+
+body {
+  height: 100%;
+  background: #424242;
+}
+
+#wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#clock {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+}
+#clock[data-touch="false"]:before {
+  border-radius: 5px;
+  width: 50vw;
+  height: 10px;
+}
+#clock[data-touch="true"] {
+  margin: -35px;
+  width: 70px;
+  height: 70px;
+  opacity: 1;
+}
+#clock[data-touch="true"]:before {
+  border-radius: 35px;
+  width: 100vh;
+  height: 70px;
+  opacity: 1;
+}
+
+[data-hours="0"]:before {
+  -webkit-transform: rotate(-87deg);
+          transform: rotate(-87deg);
+}
+
+[data-hours="1"]:before {
+  -webkit-transform: rotate(-84deg);
+          transform: rotate(-84deg);
+}
+
+[data-hours="2"]:before {
+  -webkit-transform: rotate(-81deg);
+          transform: rotate(-81deg);
+}
+
+[data-hours="3"]:before {
+  -webkit-transform: rotate(-78deg);
+          transform: rotate(-78deg);
+}
+
+[data-hours="4"]:before {
+  -webkit-transform: rotate(-75deg);
+          transform: rotate(-75deg);
+}
+
+[data-hours="5"]:before {
+  -webkit-transform: rotate(-72deg);
+          transform: rotate(-72deg);
+}
+
+[data-hours="6"]:before {
+  -webkit-transform: rotate(-69deg);
+          transform: rotate(-69deg);
+}
+
+[data-hours="7"]:before {
+  -webkit-transform: rotate(-66deg);
+          transform: rotate(-66deg);
+}
+
+[data-hours="8"]:before {
+  -webkit-transform: rotate(-63deg);
+          transform: rotate(-63deg);
+}
+
+[data-hours="9"]:before {
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+[data-hours="10"]:before {
+  -webkit-transform: rotate(-57deg);
+          transform: rotate(-57deg);
+}
+
+[data-hours="11"]:before {
+  -webkit-transform: rotate(-54deg);
+          transform: rotate(-54deg);
+}
+
+[data-hours="12"]:before {
+  -webkit-transform: rotate(-51deg);
+          transform: rotate(-51deg);
+}
+
+[data-hours="13"]:before {
+  -webkit-transform: rotate(-48deg);
+          transform: rotate(-48deg);
+}
+
+[data-hours="14"]:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+[data-hours="15"]:before {
+  -webkit-transform: rotate(-42deg);
+          transform: rotate(-42deg);
+}
+
+[data-hours="16"]:before {
+  -webkit-transform: rotate(-39deg);
+          transform: rotate(-39deg);
+}
+
+[data-hours="17"]:before {
+  -webkit-transform: rotate(-36deg);
+          transform: rotate(-36deg);
+}
+
+[data-hours="18"]:before {
+  -webkit-transform: rotate(-33deg);
+          transform: rotate(-33deg);
+}
+
+[data-hours="19"]:before {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+[data-hours="20"]:before {
+  -webkit-transform: rotate(-27deg);
+          transform: rotate(-27deg);
+}
+
+[data-hours="21"]:before {
+  -webkit-transform: rotate(-24deg);
+          transform: rotate(-24deg);
+}
+
+[data-hours="22"]:before {
+  -webkit-transform: rotate(-21deg);
+          transform: rotate(-21deg);
+}
+
+[data-hours="23"]:before {
+  -webkit-transform: rotate(-18deg);
+          transform: rotate(-18deg);
+}
+
+[data-hours="24"]:before {
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+[data-hours="25"]:before {
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+}
+
+[data-hours="26"]:before {
+  -webkit-transform: rotate(-9deg);
+          transform: rotate(-9deg);
+}
+
+[data-hours="27"]:before {
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+}
+
+[data-hours="28"]:before {
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+[data-hours="29"]:before {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+[data-hours="30"]:before {
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+}
+
+[data-hours="31"]:before {
+  -webkit-transform: rotate(6deg);
+          transform: rotate(6deg);
+}
+
+[data-hours="32"]:before {
+  -webkit-transform: rotate(9deg);
+          transform: rotate(9deg);
+}
+
+[data-hours="33"]:before {
+  -webkit-transform: rotate(12deg);
+          transform: rotate(12deg);
+}
+
+[data-hours="34"]:before {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+[data-hours="35"]:before {
+  -webkit-transform: rotate(18deg);
+          transform: rotate(18deg);
+}
+
+[data-hours="36"]:before {
+  -webkit-transform: rotate(21deg);
+          transform: rotate(21deg);
+}
+
+[data-hours="37"]:before {
+  -webkit-transform: rotate(24deg);
+          transform: rotate(24deg);
+}
+
+[data-hours="38"]:before {
+  -webkit-transform: rotate(27deg);
+          transform: rotate(27deg);
+}
+
+[data-hours="39"]:before {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+[data-hours="40"]:before {
+  -webkit-transform: rotate(33deg);
+          transform: rotate(33deg);
+}
+
+[data-hours="41"]:before {
+  -webkit-transform: rotate(36deg);
+          transform: rotate(36deg);
+}
+
+[data-hours="42"]:before {
+  -webkit-transform: rotate(39deg);
+          transform: rotate(39deg);
+}
+
+[data-hours="43"]:before {
+  -webkit-transform: rotate(42deg);
+          transform: rotate(42deg);
+}
+
+[data-hours="44"]:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+[data-hours="45"]:before {
+  -webkit-transform: rotate(48deg);
+          transform: rotate(48deg);
+}
+
+[data-hours="46"]:before {
+  -webkit-transform: rotate(51deg);
+          transform: rotate(51deg);
+}
+
+[data-hours="47"]:before {
+  -webkit-transform: rotate(54deg);
+          transform: rotate(54deg);
+}
+
+[data-hours="48"]:before {
+  -webkit-transform: rotate(57deg);
+          transform: rotate(57deg);
+}
+
+[data-hours="49"]:before {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+[data-hours="50"]:before {
+  -webkit-transform: rotate(63deg);
+          transform: rotate(63deg);
+}
+
+[data-hours="51"]:before {
+  -webkit-transform: rotate(66deg);
+          transform: rotate(66deg);
+}
+
+[data-hours="52"]:before {
+  -webkit-transform: rotate(69deg);
+          transform: rotate(69deg);
+}
+
+[data-hours="53"]:before {
+  -webkit-transform: rotate(72deg);
+          transform: rotate(72deg);
+}
+
+[data-hours="54"]:before {
+  -webkit-transform: rotate(75deg);
+          transform: rotate(75deg);
+}
+
+[data-hours="55"]:before {
+  -webkit-transform: rotate(78deg);
+          transform: rotate(78deg);
+}
+
+[data-hours="56"]:before {
+  -webkit-transform: rotate(81deg);
+          transform: rotate(81deg);
+}
+
+[data-hours="57"]:before {
+  -webkit-transform: rotate(84deg);
+          transform: rotate(84deg);
+}
+
+[data-hours="58"]:before {
+  -webkit-transform: rotate(87deg);
+          transform: rotate(87deg);
+}
+
+[data-hours="59"]:before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+[data-hours="60"]:before {
+  -webkit-transform: rotate(93deg);
+          transform: rotate(93deg);
+}
+
+[data-hours="61"]:before {
+  -webkit-transform: rotate(96deg);
+          transform: rotate(96deg);
+}
+
+[data-hours="62"]:before {
+  -webkit-transform: rotate(99deg);
+          transform: rotate(99deg);
+}
+
+[data-hours="63"]:before {
+  -webkit-transform: rotate(102deg);
+          transform: rotate(102deg);
+}
+
+[data-hours="64"]:before {
+  -webkit-transform: rotate(105deg);
+          transform: rotate(105deg);
+}
+
+[data-hours="65"]:before {
+  -webkit-transform: rotate(108deg);
+          transform: rotate(108deg);
+}
+
+[data-hours="66"]:before {
+  -webkit-transform: rotate(111deg);
+          transform: rotate(111deg);
+}
+
+[data-hours="67"]:before {
+  -webkit-transform: rotate(114deg);
+          transform: rotate(114deg);
+}
+
+[data-hours="68"]:before {
+  -webkit-transform: rotate(117deg);
+          transform: rotate(117deg);
+}
+
+[data-hours="69"]:before {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+[data-hours="70"]:before {
+  -webkit-transform: rotate(123deg);
+          transform: rotate(123deg);
+}
+
+[data-hours="71"]:before {
+  -webkit-transform: rotate(126deg);
+          transform: rotate(126deg);
+}
+
+[data-hours="72"]:before {
+  -webkit-transform: rotate(129deg);
+          transform: rotate(129deg);
+}
+
+[data-hours="73"]:before {
+  -webkit-transform: rotate(132deg);
+          transform: rotate(132deg);
+}
+
+[data-hours="74"]:before {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+[data-hours="75"]:before {
+  -webkit-transform: rotate(138deg);
+          transform: rotate(138deg);
+}
+
+[data-hours="76"]:before {
+  -webkit-transform: rotate(141deg);
+          transform: rotate(141deg);
+}
+
+[data-hours="77"]:before {
+  -webkit-transform: rotate(144deg);
+          transform: rotate(144deg);
+}
+
+[data-hours="78"]:before {
+  -webkit-transform: rotate(147deg);
+          transform: rotate(147deg);
+}
+
+[data-hours="79"]:before {
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+}
+
+[data-hours="80"]:before {
+  -webkit-transform: rotate(153deg);
+          transform: rotate(153deg);
+}
+
+[data-hours="81"]:before {
+  -webkit-transform: rotate(156deg);
+          transform: rotate(156deg);
+}
+
+[data-hours="82"]:before {
+  -webkit-transform: rotate(159deg);
+          transform: rotate(159deg);
+}
+
+[data-hours="83"]:before {
+  -webkit-transform: rotate(162deg);
+          transform: rotate(162deg);
+}
+
+[data-hours="84"]:before {
+  -webkit-transform: rotate(165deg);
+          transform: rotate(165deg);
+}
+
+[data-hours="85"]:before {
+  -webkit-transform: rotate(168deg);
+          transform: rotate(168deg);
+}
+
+[data-hours="86"]:before {
+  -webkit-transform: rotate(171deg);
+          transform: rotate(171deg);
+}
+
+[data-hours="87"]:before {
+  -webkit-transform: rotate(174deg);
+          transform: rotate(174deg);
+}
+
+[data-hours="88"]:before {
+  -webkit-transform: rotate(177deg);
+          transform: rotate(177deg);
+}
+
+[data-hours="89"]:before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+[data-hours="90"]:before {
+  -webkit-transform: rotate(183deg);
+          transform: rotate(183deg);
+}
+
+[data-hours="91"]:before {
+  -webkit-transform: rotate(186deg);
+          transform: rotate(186deg);
+}
+
+[data-hours="92"]:before {
+  -webkit-transform: rotate(189deg);
+          transform: rotate(189deg);
+}
+
+[data-hours="93"]:before {
+  -webkit-transform: rotate(192deg);
+          transform: rotate(192deg);
+}
+
+[data-hours="94"]:before {
+  -webkit-transform: rotate(195deg);
+          transform: rotate(195deg);
+}
+
+[data-hours="95"]:before {
+  -webkit-transform: rotate(198deg);
+          transform: rotate(198deg);
+}
+
+[data-hours="96"]:before {
+  -webkit-transform: rotate(201deg);
+          transform: rotate(201deg);
+}
+
+[data-hours="97"]:before {
+  -webkit-transform: rotate(204deg);
+          transform: rotate(204deg);
+}
+
+[data-hours="98"]:before {
+  -webkit-transform: rotate(207deg);
+          transform: rotate(207deg);
+}
+
+[data-hours="99"]:before {
+  -webkit-transform: rotate(210deg);
+          transform: rotate(210deg);
+}
+
+[data-hours="100"]:before {
+  -webkit-transform: rotate(213deg);
+          transform: rotate(213deg);
+}
+
+[data-hours="101"]:before {
+  -webkit-transform: rotate(216deg);
+          transform: rotate(216deg);
+}
+
+[data-hours="102"]:before {
+  -webkit-transform: rotate(219deg);
+          transform: rotate(219deg);
+}
+
+[data-hours="103"]:before {
+  -webkit-transform: rotate(222deg);
+          transform: rotate(222deg);
+}
+
+[data-hours="104"]:before {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+[data-hours="105"]:before {
+  -webkit-transform: rotate(228deg);
+          transform: rotate(228deg);
+}
+
+[data-hours="106"]:before {
+  -webkit-transform: rotate(231deg);
+          transform: rotate(231deg);
+}
+
+[data-hours="107"]:before {
+  -webkit-transform: rotate(234deg);
+          transform: rotate(234deg);
+}
+
+[data-hours="108"]:before {
+  -webkit-transform: rotate(237deg);
+          transform: rotate(237deg);
+}
+
+[data-hours="109"]:before {
+  -webkit-transform: rotate(240deg);
+          transform: rotate(240deg);
+}
+
+[data-hours="110"]:before {
+  -webkit-transform: rotate(243deg);
+          transform: rotate(243deg);
+}
+
+[data-hours="111"]:before {
+  -webkit-transform: rotate(246deg);
+          transform: rotate(246deg);
+}
+
+[data-hours="112"]:before {
+  -webkit-transform: rotate(249deg);
+          transform: rotate(249deg);
+}
+
+[data-hours="113"]:before {
+  -webkit-transform: rotate(252deg);
+          transform: rotate(252deg);
+}
+
+[data-hours="114"]:before {
+  -webkit-transform: rotate(255deg);
+          transform: rotate(255deg);
+}
+
+[data-hours="115"]:before {
+  -webkit-transform: rotate(258deg);
+          transform: rotate(258deg);
+}
+
+[data-hours="116"]:before {
+  -webkit-transform: rotate(261deg);
+          transform: rotate(261deg);
+}
+
+[data-hours="117"]:before {
+  -webkit-transform: rotate(264deg);
+          transform: rotate(264deg);
+}
+
+[data-hours="118"]:before {
+  -webkit-transform: rotate(267deg);
+          transform: rotate(267deg);
+}
+
+[data-hours="119"]:before {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.ttl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: rgba(255, 255, 255, 0.1);
+  font: 50px AvenirNext-Heavy;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}

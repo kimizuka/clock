@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+  <meta charset="UTF-8" />
+  <title>影時計 / 影の方向でなんとなく現在時刻がわかるサイト</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+  <meta name="description" content="画面を触ってみてください。指に落ちる影の方向でなんとなく現在時刻がわかります。" />
+  <meta name="keywords" content="影時計,君塚史高,きみづかふみたか" />
+  <meta name="author" content="君塚史高" />
+  <meta name="generator" content="Sublime Text 3" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta property="fb:app_id" content="152392075314937" />
+  <meta property="og:title" content="影時計 / 影の方向でなんとなく現在時刻がわかるサイト" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://clock.kimizuka.fm" />
+  <meta property="og:image" content="https://clock.kimizuka.fm/ogp.png" />
+  <meta property="og:image:width" content="630" />
+  <meta property="og:image:height" content="315" />
+  <meta property="og:site_name" content="影時計 / 影の方向でなんとなく現在時刻がわかるサイト" />
+  <meta property="og:description" content="画面を触ってみてください。指に落ちる影の方向でなんとなく現在時刻がわかります。" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@ki_230" />
+  <meta name="twitter:creator" content="@ki_230" />
+  <meta name="twitter:title" content="影時計 / 影の方向でなんとなく現在時刻がわかるサイト" />
+  <meta name="twitter:description" content="画面を触ってみてください。指に落ちる影の方向でなんとなく現在時刻がわかります。" />
+  <meta name="twitter:image:src" content="https://clock.kimizuka.fm/ogp.png" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="canonical" href="https://clock.kimizuka.fm" />
+  <link rel="stylesheet" href="./main.css" />
+  <link rel="shortcut icon" href="./favicon.ico" />
+</head>
+<body>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '152392075314937',
+        xfbml      : true,
+        version    : 'v2.10'
+      });
+      FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/ja_JP/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <div id="fb-root"></div>
+  <div id="wrapper">
+    <h1 class="ttl">Please Touch The Screen.</h1>
+    <div id="clock"></div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
