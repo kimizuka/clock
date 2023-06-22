@@ -41,7 +41,9 @@
     isTouch = true;
     x = evt.touches[0].clientX;
     y = evt.touches[0].clientY;
-  }, false);
+  }, {
+    passive: false
+  });
 
   document.addEventListener("touchend", function (evt) {
     isVisible = false;
